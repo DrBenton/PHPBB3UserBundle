@@ -1,0 +1,3 @@
+services:
+    phpbb3_encoder:
+        class: Seyon\PHPBB3\UserBundle\Security\Encoder
