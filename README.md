@@ -19,6 +19,19 @@ User Class and Encoder for PHPBB3 User Table
 
 # Install
 
+## composer.json
+
+```json
+.....
+"require": {
+....
+    "seyon/phpbb3-user-bundle": "dev-master"
+....
+},
+.....
+
+```
+
 ## AppKernel.php
 
 ```php
