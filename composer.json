@@ -20,5 +20,5 @@
     "autoload": {
         "psr-0": { "Seyon\\PHPBB3\\UserBundle": "" }
     },
-    "target-dir": "Seyon/PHPBB3/UserBundle"
+    "target-dir": ""
 }
