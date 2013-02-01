@@ -76,6 +76,6 @@ security:
             logout:
                 path:   /logout
                 target: /
-            anonymous: ~
+            anonymous: ~ 
 
 ```
