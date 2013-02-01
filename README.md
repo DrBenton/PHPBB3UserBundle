@@ -12,6 +12,6 @@ User Class and Encoder for PHPBB3 User Table
 == TODO Features ==
 
 * Dynamic table name
-* Register
+* Registration
 * PW Reminder
-* PHPBB3 Accounttypes to SF2 Roles
+* PHPBB3 Accounttypes to SF2 Roles (User, Admin, Mod)
