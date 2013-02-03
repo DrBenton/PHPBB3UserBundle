@@ -3,6 +3,10 @@ PHPBB3UserBundle
 
 User Class and Encoder for PHPBB3 User Table
 
+# Warning
+Do not use the console command doctrine:schema:update !
+The User Entity has current missing Default values!
+PHPBB3 is therefore throwing error.
 
 # Current Features
 
@@ -15,6 +19,7 @@ User Class and Encoder for PHPBB3 User Table
 * Registration
 * PW Reminder
 * PHPBB3 Accounttypes to SF2 Roles (User, Admin, Mod)
+* Correct Mapping (Default Values)
 
 
 # Install
