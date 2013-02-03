@@ -217,7 +217,7 @@ class Base
      *
      * @ORM\Column(name="user_dst", type="boolean", nullable=false)
      */
-    protected $userDst = 0;
+    protected $userDst = 0; 
 
     /**
      * @var string
