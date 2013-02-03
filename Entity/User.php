@@ -16,7 +16,7 @@ class User extends BaseUser implements AdvancedUserInterface
 {
       
     public function getId(){
-        return $userId;
+        return $this->userId;
     }
     
     public function getUsername()
