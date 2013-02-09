@@ -1,4 +1,4 @@
-_news:
+login:
     pattern:  /login
     defaults: { _controller: SeyonPHPBB3UserBundle:Access:login }
     
