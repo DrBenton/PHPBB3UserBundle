@@ -30,9 +30,9 @@ class AccessController extends Controller
 		if($error){
 			$errorMessage = $error->getMessage();
 		}	
-		
+
 		return array(
-			// last username entered by the user
+			'seyon_phpbb3_user' => $this->container->getParameter('seyon_phpbb3_user'),
             'error' => $errorMessage,
 			'last_username' => $this->get('request')->getSession()->get(SecurityContext::LAST_USERNAME)
 		);
