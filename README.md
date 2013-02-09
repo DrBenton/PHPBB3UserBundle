@@ -4,9 +4,7 @@ PHPBB3UserBundle
 User Class and Encoder for PHPBB3 User Table
 
 # Warning
-Do not use the console command doctrine:schema:update !
-The User Entity has current missing Default values!
-PHPBB3 is therefore throwing error.
+This Bundle need Symfony 2.2 (DEV) !
 
 # Current Features
 
@@ -45,12 +43,6 @@ $bundles = array(
             new \Seyon\PHPBB3\UserBundle\SeyonPHPBB3UserBundle()
 .....
         );
-```
-
-## config.yml
-```yaml
-imports:
-    - { resource: "@SeyonPHPBB3UserBundle/Resources/config/services.yml" }
 ```
 
 ## routing.yml
