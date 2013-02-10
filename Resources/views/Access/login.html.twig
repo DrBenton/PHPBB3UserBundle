@@ -15,7 +15,7 @@
 				<label for="username">{% trans %}username{% endtrans %}:</label>
 			</div>
 			<div class="formInputBlock">
-				<input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                <input type="text" id="username" placeholder="{% trans %}username{% endtrans %}" name="_username" value="{{ last_username }}" required="required" />
 			</div>
 		</div>
 		<div class="cleaner"></div>
@@ -27,7 +27,7 @@
 				<label for="password">{% trans %}password{% endtrans %}:</label>
 			</div>
 			<div class="formInputBlock">
-				<input type="password" id="password" name="_password" required="required"  />
+				<input type="password" id="password" placeholder="{% trans %}password{% endtrans %}" name="_password" required="required"  />
 			</div>
 		</div>
 		<div class="cleaner"></div>
