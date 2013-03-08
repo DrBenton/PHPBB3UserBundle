@@ -19,14 +19,14 @@ class Base
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_type", type="integer", nullable=false)
+     * @ORM\Column(name="user_type", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userType = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="group_id", type="integer", nullable=false)
+     * @ORM\Column(name="group_id", type="integer", nullable=false, options={"default" = 3})
      */
     protected $groupId = 3;
 
@@ -40,7 +40,7 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_perm_from", type="integer", nullable=false)
+     * @ORM\Column(name="user_perm_from", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userPermFrom = 0;
 
@@ -54,7 +54,7 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_regdate", type="integer", nullable=false)
+     * @ORM\Column(name="user_regdate", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userRegdate = 0;
 
@@ -82,14 +82,14 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_passchg", type="integer", nullable=false)
+     * @ORM\Column(name="user_passchg", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userPasschg = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_pass_convert", type="boolean", nullable=false)
+     * @ORM\Column(name="user_pass_convert", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userPassConvert = 0;
 
@@ -103,7 +103,7 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_email_hash", type="bigint", nullable=false)
+     * @ORM\Column(name="user_email_hash", type="bigint", nullable=false, options={"default" = 0})
      */
     protected $userEmailHash = 0;
 
@@ -117,21 +117,21 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_lastvisit", type="integer", nullable=false)
+     * @ORM\Column(name="user_lastvisit", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastvisit = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_lastmark", type="integer", nullable=false)
+     * @ORM\Column(name="user_lastmark", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastmark = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_lastpost_time", type="integer", nullable=false)
+     * @ORM\Column(name="user_lastpost_time", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastpostTime = 0;
 
@@ -152,49 +152,49 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_last_search", type="integer", nullable=false)
+     * @ORM\Column(name="user_last_search", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastSearch = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_warnings", type="boolean", nullable=false)
+     * @ORM\Column(name="user_warnings", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userWarnings = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_last_warning", type="integer", nullable=false)
+     * @ORM\Column(name="user_last_warning", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastWarning = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_login_attempts", type="boolean", nullable=false)
+     * @ORM\Column(name="user_login_attempts", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userLoginAttempts = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_inactive_reason", type="boolean", nullable=false)
+     * @ORM\Column(name="user_inactive_reason", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userInactiveReason = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_inactive_time", type="integer", nullable=false)
+     * @ORM\Column(name="user_inactive_time", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userInactiveTime = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_posts", type="integer", nullable=false)
+     * @ORM\Column(name="user_posts", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userPosts = 0;
 
@@ -208,35 +208,35 @@ class Base
     /**
      * @var float
      *
-     * @ORM\Column(name="user_timezone", type="decimal", nullable=false)
+     * @ORM\Column(name="user_timezone", type="decimal", nullable=false, options={"default" = 0})
      */
     protected $userTimezone = 0.00;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_dst", type="boolean", nullable=false)
+     * @ORM\Column(name="user_dst", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userDst = 0; 
 
     /**
      * @var string
      *
-     * @ORM\Column(name="user_dateformat", type="string", length=30, nullable=false)
+     * @ORM\Column(name="user_dateformat", type="string", length=30, nullable=false, options={"default" = "d M Y H:i"})
      */
     protected $userDateformat = "d M Y H:i";
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_style", type="integer", nullable=false)
+     * @ORM\Column(name="user_style", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userStyle = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_rank", type="integer", nullable=false)
+     * @ORM\Column(name="user_rank", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userRank = 0;
 
@@ -250,140 +250,140 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_new_privmsg", type="integer", nullable=false)
+     * @ORM\Column(name="user_new_privmsg", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userNewPrivmsg = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_unread_privmsg", type="integer", nullable=false)
+     * @ORM\Column(name="user_unread_privmsg", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userUnreadPrivmsg = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_last_privmsg", type="integer", nullable=false)
+     * @ORM\Column(name="user_last_privmsg", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userLastPrivmsg = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_message_rules", type="boolean", nullable=false)
+     * @ORM\Column(name="user_message_rules", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userMessageRules = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_full_folder", type="integer", nullable=false)
+     * @ORM\Column(name="user_full_folder", type="integer", nullable=false, options={"default" = -3})
      */
     protected $userFullFolder = -3;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_emailtime", type="integer", nullable=false)
+     * @ORM\Column(name="user_emailtime", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userEmailtime = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_topic_show_days", type="smallint", nullable=false)
+     * @ORM\Column(name="user_topic_show_days", type="smallint", nullable=false, options={"default" = 0})
      */
     protected $userTopicShowDays = 0;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="user_topic_sortby_type", type="string", length=1, nullable=false)
+     * @ORM\Column(name="user_topic_sortby_type", type="string", length=1, nullable=false, options={"default" = "t"})
      */
     protected $userTopicSortbyType = "t";
 
     /**
      * @var string
      *
-     * @ORM\Column(name="user_topic_sortby_dir", type="string", length=1, nullable=false)
+     * @ORM\Column(name="user_topic_sortby_dir", type="string", length=1, nullable=false, options={"default" = "d"})
      */
     protected $userTopicSortbyDir = "d";
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_post_show_days", type="smallint", nullable=false)
+     * @ORM\Column(name="user_post_show_days", type="smallint", nullable=false, options={"default" = 0})
      */
     protected $userPostShowDays = 0;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="user_post_sortby_type", type="string", length=1, nullable=false)
+     * @ORM\Column(name="user_post_sortby_type", type="string", length=1, nullable=false, options={"default" = "t"})
      */
     protected $userPostSortbyType = "t";
 
     /**
      * @var string
      *
-     * @ORM\Column(name="user_post_sortby_dir", type="string", length=1, nullable=false)
+     * @ORM\Column(name="user_post_sortby_dir", type="string", length=1, nullable=false, options={"default" = "a"})
      */
     protected $userPostSortbyDir = "a";
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_notify", type="boolean", nullable=false)
+     * @ORM\Column(name="user_notify", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userNotify = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_notify_pm", type="boolean", nullable=false)
+     * @ORM\Column(name="user_notify_pm", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userNotifyPm = 1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_notify_type", type="boolean", nullable=false)
+     * @ORM\Column(name="user_notify_type", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userNotifyType = 0;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_allow_pm", type="boolean", nullable=false)
+     * @ORM\Column(name="user_allow_pm", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userAllowPm = 1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_allow_viewonline", type="boolean", nullable=false)
+     * @ORM\Column(name="user_allow_viewonline", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userAllowViewonline = 1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_allow_viewemail", type="boolean", nullable=false)
+     * @ORM\Column(name="user_allow_viewemail", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userAllowViewemail = 1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_allow_massemail", type="boolean", nullable=false)
+     * @ORM\Column(name="user_allow_massemail", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userAllowMassemail = 1;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_options", type="integer", nullable=false)
+     * @ORM\Column(name="user_options", type="integer", nullable=false, options={"default" = 230271})
      */
     protected $userOptions = 230271;
 
@@ -397,21 +397,21 @@ class Base
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_avatar_type", type="boolean", nullable=false)
+     * @ORM\Column(name="user_avatar_type", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userAvatarType = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_avatar_width", type="smallint", nullable=false)
+     * @ORM\Column(name="user_avatar_width", type="smallint", nullable=false, options={"default" = 0})
      */
     protected $userAvatarWidth = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_avatar_height", type="smallint", nullable=false)
+     * @ORM\Column(name="user_avatar_height", type="smallint", nullable=false, options={"default" = 0})
      */
     protected $userAvatarHeight = 0;
 
@@ -523,21 +523,21 @@ class Base
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_new", type="boolean", nullable=false)
+     * @ORM\Column(name="user_new", type="boolean", nullable=false, options={"default" = 1})
      */
     protected $userNew = 1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="user_reminded", type="boolean", nullable=false)
+     * @ORM\Column(name="user_reminded", type="boolean", nullable=false, options={"default" = 0})
      */
     protected $userReminded = 0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_reminded_time", type="integer", nullable=false)
+     * @ORM\Column(name="user_reminded_time", type="integer", nullable=false, options={"default" = 0})
      */
     protected $userRemindedTime = 0;
 
