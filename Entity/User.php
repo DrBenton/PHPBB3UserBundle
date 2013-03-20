@@ -45,7 +45,31 @@ class User extends BaseUser implements AdvancedUserInterface
 
     public function getRoles()
     {
-        return array('ROLE_USER');
+        $finalRoles = array();
+        $groups = $this->groups;
+        if($groups){
+            foreach($groups as $group){
+                $object = $group->getGroup();
+                if($object){
+                    
+                    $name = $object->getGroupName();
+                    
+                    //SF 2 Roles
+                    if($name === 'ADMINISTRATORS'){
+                        $finalRoles[] = 'ROLE_ADMIN';
+                    } else if($name === 'GLOBAL_MODERATORS'){
+                        $finalRoles[] = 'ROLE_MOD';
+                    } else if($name === 'REGISTERED'){
+                        $finalRoles[] = 'ROLE_USER';
+                    }
+                    
+                    //PHPBB Roles
+                    $finalRoles[] = 'ROLE_'.strtoupper($name);
+                }
+            }
+        }
+   
+        return $finalRoles;
     }
 
     public function eraseCredentials()

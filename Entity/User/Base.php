@@ -10,11 +10,11 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_id", type="integer", nullable=false)
+     * @ORM\Column(name="user_id", type="integer", columnDefinition="mediumint(8) UNSIGNED NOT NULL DEFAULT '0'")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $userId;
+    protected $userId = 0;
 
     /**
      * @var boolean
@@ -542,4 +542,8 @@ class Base
     protected $userRemindedTime = 0;
 
 
+    /**
+    * @ORM\OneToMany(targetEntity="\Seyon\PHPBB3\UserBundle\Entity\User\Group", mappedBy="user", cascade={"remove"}, orphanRemoval=false)
+    */
+   protected $groups;
 }
