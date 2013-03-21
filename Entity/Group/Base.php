@@ -9,7 +9,7 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="group_id", type="integer", nullable=false, columnDefinition="mediumint(8) UNSIGNED NOT NULL DEFAULT '0'")
+     * @ORM\Column(name="group_id", type="integer", nullable=false, columnDefinition="MEDIUMINT( 8 ) UNSIGNED NOT NULL AUTO_INCREMENT")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

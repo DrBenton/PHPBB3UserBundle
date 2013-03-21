@@ -10,11 +10,11 @@ class Base
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_id", type="integer", columnDefinition="mediumint(8) UNSIGNED NOT NULL DEFAULT '0'")
+     * @ORM\Column(name="user_id", type="integer", columnDefinition="MEDIUMINT( 8 ) UNSIGNED NOT NULL AUTO_INCREMENT")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $userId = 0;
+    protected $userId;
 
     /**
      * @var boolean
