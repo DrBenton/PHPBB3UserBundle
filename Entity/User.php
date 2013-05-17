@@ -111,4 +111,8 @@ class User extends BaseUser implements AdvancedUserInterface
         }
         return true;
     }
+    
+    public function __toString(){
+        return (string)$this->getUsername();
+    }
 }
