@@ -53,6 +53,8 @@ class User extends BaseUser implements AdvancedUserInterface
                 if($object){
                     
                     $name = $object->getGroupName();
+                    $name = strtoupper($name);
+                    $finalRoles[] = 'ROLE_PHPBB3_'.$name;
                     
                     //SF 2 Roles
                     if($name === 'ADMINISTRATORS'){
@@ -61,6 +63,8 @@ class User extends BaseUser implements AdvancedUserInterface
                         $finalRoles[] = 'ROLE_MOD';
                     } else if($name === 'REGISTERED'){
                         $finalRoles[] = 'ROLE_USER';
+                    } else if($name === 'GUESTS'){
+                        $finalRoles[] = 'IS_AUTHENTICATED_ANONYMOUSLY';
                     }
                     
                     //PHPBB Roles

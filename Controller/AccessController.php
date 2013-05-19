@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use JMS\SecurityExtraBundle\Annotation\Secure;
 
 
-class AccessController extends Controller 
+class AccessController extends Controller  
 {
 		
     public function getRefererRoute()
