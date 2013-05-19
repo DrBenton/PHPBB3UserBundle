@@ -12,6 +12,14 @@ use JMS\SecurityExtraBundle\Annotation\Secure;
 class AccessController extends Controller 
 {
 		
+    public function getRefererRoute()
+    {
+        $request = $this->getRequest();
+        //look for the referer route
+        $referer = $request->headers->get('referer');
+        return $referer;
+    }
+    
     /**
      * @Route("/login", name="login")
      * @Template()
@@ -30,11 +38,15 @@ class AccessController extends Controller
 		if($error){
 			$errorMessage = $error->getMessage();
 		}	
-
+        
+        $session    = $this->getRequest()->getSession();
+        $lastRoute  = $this->getRefererRoute();
+        
 		return array(
 			'seyon_phpbb3_user' => $this->container->getParameter('seyon_phpbb3_user'),
             'error' => $errorMessage,
-			'last_username' => $this->get('request')->getSession()->get(SecurityContext::LAST_USERNAME)
+			'last_username' => $this->get('request')->getSession()->get(SecurityContext::LAST_USERNAME),
+            'last_route' => $lastRoute
 		);
     }
 }

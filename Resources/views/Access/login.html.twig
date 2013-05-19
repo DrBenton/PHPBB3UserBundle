@@ -33,7 +33,7 @@
 		<div class="cleaner"></div>
 		{% endspaceless %}
 
-		<input type="hidden" name="_target_path" value="{{ path('_welcome') }}" />
+		<input type="hidden" name="_target_path" value="{{ last_route }}" />
 
 		<input  class="btn" type="submit" name="login" value="{% trans %}login{% endtrans %}" />
 	</form>
