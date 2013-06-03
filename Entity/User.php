@@ -9,7 +9,7 @@ use \Seyon\PHPBB3\UserBundle\Entity\User\Base as BaseUser;
 /**
  * Seyon/PHPBB3/UserBundle/EntityPhpbbUsers
  *
- * @ORM\Table(name="phpbb_users")
+ * @ORM\Table(name="users")
  * @ORM\Entity
  */
 class User extends BaseUser implements AdvancedUserInterface

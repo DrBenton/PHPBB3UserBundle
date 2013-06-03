@@ -1,3 +1,6 @@
 services:
     phpbb3_encoder:
         class: Seyon\PHPBB3\UserBundle\Security\Encoder
+    seyon_phpbb3_user_provider:
+        class: Seyon\PHPBB3\UserBundle\Security\Provider
+        arguments: ["@doctrine", 'Seyon\PHPBB3\UserBundle\Entity\User', 'username']

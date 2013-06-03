@@ -8,7 +8,7 @@ use \Seyon\PHPBB3\UserBundle\Entity\Group\Base as BaseGroup;
 
 /**
  *
- * @ORM\Table(name="phpbb_groups")
+ * @ORM\Table(name="groups")
  * @ORM\Entity
  */
 class Group extends BaseGroup

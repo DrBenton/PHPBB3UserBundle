@@ -5,7 +5,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  *
- * @ORM\Table(name="phpbb_user_group")
+ * @ORM\Table(name="user_group")
  * @ORM\Entity
  */
 class Group
