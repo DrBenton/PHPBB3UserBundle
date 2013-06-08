@@ -14,7 +14,7 @@ class AccessController extends Controller
 		
     public function getRefererRoute()
     {
-        $request = $this->getRequest();
+        $request = $this->container->get('request');
         //look for the referer route
         $referer = $request->headers->get('referer');
         return $referer;
@@ -39,7 +39,7 @@ class AccessController extends Controller
 			$errorMessage = $error->getMessage();
 		}	
         
-        $session    = $this->getRequest()->getSession();
+        $session    = $this->container->get('request')->getSession();
         $lastRoute  = $this->getRefererRoute();
         
 		return array(
