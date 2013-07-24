@@ -22,4 +22,11 @@ class Group extends BaseGroup
         return $this->groupName;
     }
     
+    public function getUsers(){
+        $users = array();
+        foreach($this->users as $userGroup){
+            $users[] = $userGroup->getUser();
+        }
+        return $users;
+    }
 }
