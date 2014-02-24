@@ -1,6 +1,6 @@
 seyon_phpbb3_user:
     template: "SeyonPHPBB3UserBundle::layout.html.twig"
-    table_prefix: phpbb_    
+    table_prefix: ""    
     
     
 doctrine:
