@@ -25,7 +25,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('group_class')
                 	->defaultValue('Seyon\PHPBB3\UserBundle\Entity\Group')
                 ->end()
-            ->end();
+            ->end(); 
 
         return $treeBuilder;
     }
