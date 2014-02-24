@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace Seyon\PHPBB3\UserBundle\Controller;
 

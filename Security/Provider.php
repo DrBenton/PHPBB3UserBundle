@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Seyon\PHPBB3\UserBundle\Security;
 
 use Symfony\Component\Security\Core\User\UserProviderInterface;

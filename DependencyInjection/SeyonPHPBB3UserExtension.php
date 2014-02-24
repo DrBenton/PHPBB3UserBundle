@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Seyon\PHPBB3\UserBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
