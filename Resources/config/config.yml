@@ -1,8 +1,8 @@
 seyon_phpbb3_user:
     template: "SeyonPHPBB3UserBundle::layout.html.twig"
     table_prefix: "" 
-    user_class: "Seyon\PHPBB3\UserBundle\Entity\User"
-    group_class: "Seyon\PHPBB3\UserBundle\Entity\Group" 
+    user_class: Seyon\PHPBB3\UserBundle\Entity\User
+    group_class: Seyon\PHPBB3\UserBundle\Entity\Group 
     
     
 doctrine:
