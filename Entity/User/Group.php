@@ -43,13 +43,13 @@ class Group
     protected $userPending = 1;
     
     /**
-     * @ORM\ManyToOne(targetEntity="\Seyon\PHPBB3\UserBundle\Entity\User", cascade={"remove"}, inversedBy="groups" )
+     * @ORM\ManyToOne(targetEntity="Seyon\PHPBB3\UserBundle\Entity\User", cascade={"remove"}, inversedBy="groups" )
      * @ORM\JoinColumn(name="user_id", referencedColumnName="user_id", unique=false, onDelete="CASCADE")
      */
    protected $user;
     
     /**
-     * @ORM\ManyToOne(targetEntity="\Seyon\PHPBB3\UserBundle\Entity\Group", cascade={"remove"}, inversedBy="users" )
+     * @ORM\ManyToOne(targetEntity="Seyon\PHPBB3\UserBundle\Entity\Group", cascade={"remove"}, inversedBy="users" )
      * @ORM\JoinColumn(name="group_id", referencedColumnName="group_id", unique=false, onDelete="CASCADE")
      */
    protected $group;
