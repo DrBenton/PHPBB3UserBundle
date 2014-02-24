@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Seyon\PHPBB3\UserBundle\Entity\Group;
 
 use Doctrine\ORM\Mapping as ORM;
