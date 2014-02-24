@@ -16,7 +16,11 @@ class SeyonPHPBB3UserExtension extends Extension implements PrependExtensionInte
         
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
-        $loader->load('config.yml');
+        
+        $config = $container->getExtensionConfig('seyon_phpbb3_user');
+        if(!isset($config[0]) || empty($config[0])){
+            $loader->load('config.yml');
+        }
         
         $doctrine = $container->getExtensionConfig('doctrine');
         if(!isset($doctrine[0]['dbal']['connections']['seyon_phpbb3'])){
