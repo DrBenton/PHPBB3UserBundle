@@ -16,6 +16,9 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('template') 
                     ->defaultValue('SeyonPHPBB3UserBundle::layout.html.twig')
                 ->end()
+                ->scalarNode('table_prefix')
+                    ->defaultValue('phpbb3_')
+                ->end()
             ->end();
 
         return $treeBuilder;
