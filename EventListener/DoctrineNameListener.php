@@ -31,9 +31,9 @@ class DoctrineNameListener
                 $mappedTableName = $classMetadata->associationMappings[$fieldName]['joinTable']['name'];
                 $classMetadata->associationMappings[$fieldName]['joinTable']['name'] = $this->prefix . $mappedTableName;
             }
-            if ($mapping['targetEntity'] == '\Seyon\PHPBB3\UserBundle\Entity\User') {
+            if ($mapping['targetEntity'] == 'Seyon\PHPBB3\UserBundle\Entity\User') {
             	$classMetadata->associationMappings[$fieldName]['targetEntity'] = $this->userClass;
-            } else if ($mapping['targetEntity'] == '\Seyon\PHPBB3\UserBundle\Entity\Group') {
+            } else if ($mapping['targetEntity'] == 'Seyon\PHPBB3\UserBundle\Entity\Group') {
             	$classMetadata->associationMappings[$fieldName]['targetEntity'] = $this->groupClass;
             }
         }
