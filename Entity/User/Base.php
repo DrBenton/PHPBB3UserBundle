@@ -543,7 +543,7 @@ class Base
 
 
     /**
-    * @ORM\OneToMany(targetEntity="\Seyon\PHPBB3\UserBundle\Entity\User\Group", mappedBy="user", cascade={"remove"}, orphanRemoval=false)
+    * @ORM\OneToMany(targetEntity="Seyon\PHPBB3\UserBundle\Entity\User\Group", mappedBy="user", cascade={"remove"}, orphanRemoval=false)
     */
    protected $groups;
 }
