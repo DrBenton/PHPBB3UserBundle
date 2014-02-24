@@ -19,6 +19,12 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('table_prefix')
                     ->defaultValue('phpbb3_')
                 ->end()
+                ->scalarNode('user_class')
+                	->defaultValue('Seyon\PHPBB3\UserBundle\Entity\User')
+                ->end()
+                ->scalarNode('group_class')
+                	->defaultValue('Seyon\PHPBB3\UserBundle\Entity\Group')
+                ->end()
             ->end();
 
         return $treeBuilder;
