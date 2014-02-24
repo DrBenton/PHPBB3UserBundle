@@ -1,4 +1,4 @@
-<?
+<?php
 // src/Acme/UserBundle/Entity/User.php
 namespace Seyon\PHPBB3\UserBundle\Entity\User;
 
