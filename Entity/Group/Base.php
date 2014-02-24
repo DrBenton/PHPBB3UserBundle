@@ -156,7 +156,7 @@ class Base
     protected $groupLegend = 1;
     
     /**
-    * @ORM\OneToMany(targetEntity="\Seyon\PHPBB3\UserBundle\Entity\User\Group", mappedBy="group", cascade={"remove"}, orphanRemoval=false)
+    * @ORM\OneToMany(targetEntity="Seyon\PHPBB3\UserBundle\Entity\User\Group", mappedBy="group", cascade={"remove"}, orphanRemoval=false)
     */
    protected $users;
 }
