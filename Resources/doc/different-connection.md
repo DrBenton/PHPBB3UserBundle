@@ -1,4 +1,3 @@
-
 edi config
 
 ```yaml
@@ -8,14 +7,14 @@ doctrine:
         default_connection:   default
         connections:
             default:
-# default connections info...
+# default connection info...
                 dbname:               "%database_name%"
                 host:                 "%database_host%"
                 port:                 "%database_port%"
                 user:                 "%database_user%"
                 password:             "%database_password%"
             seyon_phpbb3:
-# forum connections info...
+# forum connection info...
                 dbname:               "phpbb"
                 host:                 "%database_host%"
                 port:                 "%database_port%"
