@@ -4,6 +4,8 @@ create your custom Entities in Acme/DemoBudle/Entity
 
 edit config
 ```yaml
+# app/config/config.yml
+
 doctrine:
     dbal:
         default_connection:   default
@@ -38,6 +40,8 @@ seyon_phpbb3_user:
 
 security
 ```yaml
+# app/config/security.yml
+
 security:
     encoders:
         Acme\DemoBundle\Entity\User:
