@@ -21,7 +21,6 @@ doctrine:
                 user:                 "%database_user%"
                 password:             "%database_password%"
     orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
         default_entity_manager:   default
         entity_managers:
             default:
