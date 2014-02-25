@@ -51,6 +51,7 @@ security:
 ```
 
 
+services
 ```yaml
 # Acme/DemoBundle/Resources/config/services.yml
 services:
